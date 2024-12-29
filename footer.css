@@ -1,0 +1,149 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,300i,400i,500i,600i,700i,800i&display=swap');
+
+/* Font Awesome Custom Font */
+@font-face { 
+  font-family: 'FontAwesome';
+  src: url('https://archive.nptel.ac.in/assets/nptel_assets/fonts/fontawesome-webfont.eot?v=4.2.0');
+  src: url('https://archive.nptel.ac.in/assets/nptel_assets/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'),
+       url('https://archive.nptel.ac.in/assets/nptel_assets/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'),
+       url('https://archive.nptel.ac.in/assets/nptel_assets/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'),
+       url('https://archive.nptel.ac.in/assets/nptel_assets/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #222222;
+  background-color: rgba(245, 244, 244, 0.86);
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+/* Text centering and alignment */
+.text-center {
+  text-align: center;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive container */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Links and hover effects */
+a {
+  background-color: transparent;
+  color: #008cba;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+a:hover {
+  color: #7f0804;
+  text-decoration: underline;
+}
+
+/* Social media icons styling */
+.social {
+  padding: 0;
+  transform: scale(0.8);
+  transition-duration: 0.5s;
+}
+
+/* FontAwesome icon size and behavior */
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+/* Specific social icons */
+.fa-twitter-square:before {
+  content: "\f081";
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+.fa-youtube-square:before {
+  content: "\f166";
+}
+
+/* Footer styling */
+footer {
+  background-color: #7f0804;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Social media icon container */
+footer .social-icons {
+  margin-bottom: 20px;
+}
+
+footer .social-icons a {
+  margin: 0 15px;
+}
+
+footer .social-icons i {
+  color: #ffffff;
+  font-size: 3em;
+}
+
+/* Logo styling in footer */
+footer .logo img {
+  width: 100px;
+  margin-bottom: 20px;
+}
